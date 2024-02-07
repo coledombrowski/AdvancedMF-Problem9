@@ -1,0 +1,27 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. DATESUB.
+
+       ENVIRONMENT DIVISION.
+
+       DATA DIVISION.
+       LINKAGE SECTION.
+       01  HOLD-DATE-WS.
+           05 YEAR-WS       PIC 9999.
+           05 MONTH-WS      PIC 99.
+           05 DAY-WS        PIC 99.
+
+       01  MONTH-OUT       PIC 99.
+       01  DAY-OUT         PIC 99.
+       01  YEAR-OUT        PIC 9999.
+
+       PROCEDURE DIVISION USING HOLD-DATE-WS MONTH-OUT DAY-OUT YEAR-OUT.
+
+       100-MAINLINE.
+               MOVE FUNCTION CURRENT-DATE TO HOLD-DATE-WS
+               MOVE MONTH-WS TO MONTH-OUT
+               MOVE DAY-WS TO DAY-OUT
+               MOVE YEAR-WS TO YEAR-OUT
+
+           EXIT.
+
+       END PROGRAM DATESUB.
