@@ -22,6 +22,6 @@
                MOVE DAY-WS TO DAY-OUT
                MOVE YEAR-WS TO YEAR-OUT
 
-           EXIT.
+           EXIT PROGRAM.
 
        END PROGRAM DATESUB.
