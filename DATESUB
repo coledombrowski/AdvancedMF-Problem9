@@ -23,5 +23,3 @@
                MOVE YEAR-WS TO YEAR-OUT
 
            EXIT PROGRAM.
-
-       END PROGRAM DATESUB.
